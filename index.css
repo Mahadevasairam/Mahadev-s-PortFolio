@@ -11,7 +11,7 @@ footer {
   background: #c0f3ff;
   margin: 10px auto;
   padding: 5px 40px;
-  min-width: 400px;
+  min-width: 250px;
   max-width: 900px;
   display: flex;
   justify-content: space-between;
@@ -104,10 +104,11 @@ button a {
   cursor: pointer;
 }
 .projects-container {
-  padding: 10px 8%;
+  margin: 0 auto;
   display: grid;
   gap: 20px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
 }
 .project {
   width: 250px;
@@ -133,15 +134,13 @@ footer {
   text-decoration: none;
   color: black;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1285px) {
   #hero {
     padding-left: 5%;
     justify-content: center;
     align-items: center;
   }
-  .btn {
-    justify-content: center;
-  }
+
   span {
     color: black;
     text-shadow: 2px 2px 0px #c0f3ff;
@@ -159,26 +158,30 @@ footer {
   }
   .skills-container {
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 15px 15%;
   }
   .projects-container {
     grid-template-columns: 1fr 1fr;
+    justify-items: center;
   }
 }
 @media screen and (max-width: 668px) {
+  ul {
+    gap: 10px;
+  }
   #hero {
     flex-direction: column;
     padding-left: 1%;
     justify-content: center;
     align-items: center;
   }
+  .btn {
+    justify-content: center;
+  }
   #logo1 {
     display: none;
   }
   .projects-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: 1fr;
   }
 }
 
