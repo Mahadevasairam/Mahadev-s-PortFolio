@@ -6,7 +6,7 @@ body {
   background: #f4f9fc;
   font-family: "Space Grotesk", sans-serif;
 }
-header,
+.header,
 footer {
   background: #c0f3ff;
   margin: 10px auto;
@@ -23,6 +23,11 @@ header a {
   color: black;
   font-weight: 500;
 }
+header {
+  position: sticky;
+  top: 10px;
+}
+
 ul {
   list-style-type: none;
   display: flex;
@@ -54,6 +59,7 @@ header a:hover {
   width: 600px;
   padding: 0;
   filter: drop-shadow(15px 10px 0px #c0f3ff);
+  z-index: -1;
 }
 .hero-1 {
   display: flex;
@@ -97,7 +103,7 @@ button a {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   row-gap: 20px;
-  padding: 15px 20%;
+  padding: 15px 0;
 }
 .skill-icon {
   text-align: center;
@@ -109,19 +115,25 @@ button a {
   gap: 20px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-items: center;
+  place-content: center;
 }
 .project {
   width: 250px;
   background: white;
   padding: 25px 25px;
-  box-shadow: 0px 0px 1px #353535;
+  box-shadow: 0px 0px 2px #27d7ff;
   border-radius: 4px;
+}
+span {
+  color: black;
+  text-shadow: 2px 2px 0px #c0f3ff;
+  font-size: 20px;
 }
 .project-img {
   width: 250px;
   aspect-ratio: 1/1;
   border-radius: 10px;
-  box-shadow: 5px 5px 0px #c0f3ff;
+  box-shadow: 0px 0px 3px #27d7ff;
 }
 .project-content {
   margin-top: 15px;
@@ -134,18 +146,13 @@ footer {
   text-decoration: none;
   color: black;
 }
-@media screen and (max-width: 1285px) {
+@media screen and (max-width: 1280px) {
   #hero {
     padding-left: 5%;
     justify-content: center;
     align-items: center;
   }
 
-  span {
-    color: black;
-    text-shadow: 2px 2px 0px #c0f3ff;
-    font-size: 20px;
-  }
   .name {
     font-size: 60px;
   }
