@@ -23,10 +23,10 @@ header a {
   color: black;
   font-weight: 500;
 }
-header {
+/* header {
   position: sticky;
   top: 10px;
-}
+} */
 
 ul {
   list-style-type: none;
@@ -46,10 +46,7 @@ ul {
 h3 {
   margin: 0;
 }
-header a:hover {
-  text-decoration: underline;
-  transition: 0.5s ease-in-out;
-}
+
 #hero {
   padding: 10px 0 10px 8%;
   display: flex;
@@ -99,6 +96,9 @@ button a {
   font-size: 50px;
   text-shadow: 4px 2px 0px #c0f3ff;
 }
+.sk-img {
+  width: 60px;
+}
 .skills-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -108,9 +108,11 @@ button a {
 .skill-icon {
   text-align: center;
   cursor: pointer;
+  align-self: end;
 }
 .projects-container {
   margin: 0 auto;
+  padding: 20px 20px;
   display: grid;
   gap: 20px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -146,13 +148,52 @@ footer {
   text-decoration: none;
   color: black;
 }
+.ed-icon-bg {
+  padding: 15px;
+  background-color: white;
+  align-self: center;
+  align-content: center;
+  vertical-align: middle;
+  box-shadow: 0px 0px 2px #01b6de;
+  border-radius: 10px;
+}
+.ed-icon {
+  text-align: center;
+  font-size: 50px;
+  text-shadow: 4px 2px 0px #c0f3ff;
+}
+.ed-container {
+  min-width: 200px;
+  max-width: 1200px;
+  display: grid;
+  row-gap: 40px;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  padding: 20px;
+}
+.school {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.ed-content p,
+.ed-content h4 {
+  margin: 3px;
+}
 @media screen and (max-width: 1280px) {
+  .heading {
+    font-size: xx-large;
+  }
   #hero {
     padding-left: 5%;
     justify-content: center;
     align-items: center;
   }
-
+  .ed-container {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+  }
   .name {
     font-size: 60px;
   }
@@ -172,6 +213,9 @@ footer {
   }
 }
 @media screen and (max-width: 668px) {
+  .header {
+    padding: 5px 20px;
+  }
   ul {
     gap: 10px;
   }
