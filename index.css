@@ -18,11 +18,19 @@ footer {
   align-items: center;
   border-radius: 10px;
 }
-header a {
+header .nav-element {
   text-decoration: none;
   color: black;
   font-weight: 500;
 }
+
+.underline {
+  height: 2px;
+  max-width: 0%;
+  background-color: black;
+  animation: under-line 2s ease-in-out forwards;
+}
+
 /* header {
   position: sticky;
   top: 10px;
@@ -37,6 +45,8 @@ ul {
   margin: 0;
   font-weight: bold;
   font-size: x-large;
+  text-decoration: none;
+  color: black;
 }
 
 .left-elements,
@@ -86,16 +96,22 @@ button a {
   padding: 10px 20px;
   border-radius: 4px;
   font-family: "Space Grotesk", sans-serif;
+  transition: all 0.2s ease-in-out;
 }
 .heading {
   font-size: 40px;
   text-align: center;
-  text-shadow: 2px 5px 0px #c0f3ff;
+  text-shadow: 2px 3px 0px #c0f3ff;
 }
 .sk-icon {
   font-size: 50px;
   text-shadow: 4px 2px 0px #c0f3ff;
 }
+.sk-icon:hover,
+.sk-img:hover {
+  animation: rotate-icon 0.5s ease-in-out 0s 2;
+}
+
 .sk-img {
   width: 60px;
 }
@@ -125,6 +141,9 @@ button a {
   padding: 25px 25px;
   box-shadow: 0px 0px 2px #27d7ff;
   border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 span {
   color: black;
@@ -162,6 +181,10 @@ footer {
   font-size: 50px;
   text-shadow: 4px 2px 0px #c0f3ff;
 }
+.ed-icon:hover {
+  cursor: pointer;
+  animation: rotate-icon 1s ease-in 0s 2 alternate both;
+}
 .ed-container {
   min-width: 200px;
   max-width: 1200px;
@@ -179,6 +202,36 @@ footer {
 .ed-content p,
 .ed-content h4 {
   margin: 3px;
+}
+.project-btn {
+  background: #c0f3ff;
+  padding: 5px 15px;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+}
+.project-btn:hover,
+.hero-btn:hover {
+  background: #90ebff;
+  color: whitesmoke;
+}
+@keyframes under-line {
+  0% {
+    max-width: 0%;
+  }
+  100% {
+    max-width: 100%;
+  }
+}
+@keyframes rotate-icon {
+  from {
+    transform: rotate3d(0, 0, 0, 0deg);
+  }
+  to {
+    transform: rotate3d(1, 0, 0, 360deg);
+  }
 }
 @media screen and (max-width: 1280px) {
   .heading {
@@ -198,7 +251,7 @@ footer {
     font-size: 60px;
   }
   .designer-svg {
-    width: 250px;
+    width: 400px;
   }
   .hero-2 {
     margin-top: 30px;
@@ -213,8 +266,9 @@ footer {
   }
 }
 @media screen and (max-width: 668px) {
-  .header {
-    padding: 5px 20px;
+  .header,
+  footer {
+    padding: 5px 25px;
   }
   ul {
     gap: 10px;
@@ -231,8 +285,14 @@ footer {
   #logo1 {
     display: none;
   }
+  .designer-svg {
+    width: 300px;
+  }
   .projects-container {
     grid-template-columns: 1fr;
+  }
+  footer h3 {
+    font-size: small;
   }
 }
 
