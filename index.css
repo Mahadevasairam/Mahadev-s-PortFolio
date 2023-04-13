@@ -217,6 +217,47 @@ footer {
   background: #90ebff;
   color: whitesmoke;
 }
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+#contact-form input,
+#contact-form textarea {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: 0px 0px 2px black;
+  outline: none;
+}
+#contact-form input:hover,
+#contact-form input:focus,
+#contact-form textarea:active,
+#contact-form textarea:focus {
+  outline: 1px solid #01b6de;
+  box-shadow: 0px 0px 2px #90ebff;
+}
+#contact-submit {
+  max-width: 100px;
+  padding: 4px 8px;
+}
+#contact-submit {
+  background: #90ebff;
+  border-width: 0;
+  padding: 10px 5px;
+  border-radius: 4px;
+  font-family: "Space Grotesk", sans-serif;
+}
+#contact-submit:hover {
+  cursor: pointer;
+  background: #c0f3ff;
+}
 @keyframes under-line {
   0% {
     max-width: 0%;
@@ -293,6 +334,9 @@ footer {
   }
   footer h3 {
     font-size: small;
+  }
+  #contact-form {
+    width: 300px;
   }
 }
 
