@@ -1,5 +1,6 @@
 html {
   font-family: "Space Grotesk", sans-serif;
+  scroll-behavior: smooth;
 }
 body {
   margin: 10px;
@@ -99,6 +100,7 @@ button a {
   transition: all 0.2s ease-in-out;
 }
 .heading {
+  padding: 20px;
   font-size: 40px;
   text-align: center;
   text-shadow: 2px 3px 0px #c0f3ff;
@@ -243,18 +245,18 @@ footer {
   outline: 1px solid #01b6de;
   box-shadow: 0px 0px 2px #90ebff;
 }
-#contact-submit {
+#submit {
   max-width: 100px;
   padding: 4px 8px;
 }
-#contact-submit {
+#submit {
   background: #90ebff;
   border-width: 0;
   padding: 10px 5px;
   border-radius: 4px;
   font-family: "Space Grotesk", sans-serif;
 }
-#contact-submit:hover {
+#submit:hover {
   cursor: pointer;
   background: #c0f3ff;
 }

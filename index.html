@@ -1,4 +1,4 @@
-<!0 html>
+<!html>
     <html lang="en">
 
     <head>
@@ -18,6 +18,7 @@
             integrity="sha512-L+sMmtHht2t5phORf0xXFdTC0rSlML1XcraLTrABli/0MMMylsJi3XA23ReVQkZ7jLkOEIMicWGItyK4CAt2Xw=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="index.css">
+        
         <title>Mahadev - FrontEnd Developer</title>
     </head>
     <header>
@@ -34,7 +35,7 @@
             <ul class="right-elements">
                 <li><a class="nav-element" href="#education">Education</a>
                 </li>
-                <li><a class="nav-element" href="">Contact</a>
+                <li><a class="nav-element" href="#contact" >Contact</a>
                 </li>
             </ul>
         </div>
@@ -44,7 +45,7 @@
 
         <section id="hero">
             <div class="hero-1">
-                <h1 class="name">MAHADEVA <br> SAIRAM <br> PERUKA.</h1>
+                <h1 class="name">MAHADEVA <br> SAI RAM <br> PERUKA.</h1>
                 <p>As a <span>Front-End Engineer</span>, I enjoy designing and making products that are visually
                     appealing.
                     I'm always
@@ -169,8 +170,18 @@
                         <i class="fas fa-graduation-cap ed-icon"></i>
                     </div>
                     <div class="ed-content">
+                        <h4>University of Kansas</h4>
+                        <p>Master's in Computer Science</p>
+                        <p>2024 - Present</p>
+                    </div>
+                </div>
+                <div class="school">
+                    <div class="ed-icon-bg">
+                        <i class="fas fa-graduation-cap ed-icon"></i>
+                    </div>
+                    <div class="ed-content">
                         <h4>Jyothismathi Institute of Technolgy and Science</h4>
-                        <p>Computer Science and Engineering</p>
+                        <p>B.Tech in Computer Science and Engineering</p>
                         <p>2019-2023</p>
                     </div>
                 </div>
@@ -180,7 +191,7 @@
                     </div>
                     <div class="ed-content">
                         <h4>Loyola Junior College</h4>
-                        <p>PCM</p>
+                        <p>(Intermediate) PCM</p>
                         <p>2017-2019</p>
                     </div>
                 </div>
@@ -196,18 +207,18 @@
                 </div>
             </div>
         </section>
-        <!-- <section id="contact">
+        <section id="contact">
             <h1 class="heading">mahadev/Contact.</h1>
             <form id="contact-form" action="">
                 <label for="name">Name</label>
-                <input type="text" id="mail">
+                <input type="text" id="name">
                 <label for="mail">Email</label>
                 <input type="email" id="mail">
                 <label for="message">Message</label>
                 <textarea name="" id="message" cols="30" rows="10"></textarea>
-                <button id="contact-submit" type="submit">Submit</button>
+                <button id="submit" type="button" >Submit</button>
             </form>
-        </section> -->
+        </section>
 
     </body>
     <footer>
@@ -215,10 +226,10 @@
         <ul class="social-icons">
             <a href="https://www.linkedin.com/in/mahadev21/" target="_blank"><i class="fab fa-linkedin"></i></a>
             <a href="https://github.com/Mahadevasairam" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://twitter.com/nkcreative2002" target="_blank"><i class="fab fa-twitter"></i></a>
         </ul>
     </footer>
-
+    <script  type="module" src="index.js"></script>
+    <script  src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
 
     </html>
